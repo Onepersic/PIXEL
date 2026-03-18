@@ -13,3 +13,25 @@ body {
     background: #000;
     border-bottom: 2px solid #b30000;
 }
+
+.head h1 {
+    color: #b30000;
+    text-shadow: 0 0 10px #b30000;
+}
+
+
+nav a {
+    color: #e0e0e0;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff3333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #b30000;
+}
