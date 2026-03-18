@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="head">
+                <div class="head-top">
+                    <h1>Adeptus Mechanicus</h1>
+                </div>
+                <div class="head-bot">
+                    <nav>
+                        <a href="/index/index.html">Главное</a>
+                        <a href="/Persona/index.html">Персонажи</a>
+                        <a href="">Технологии</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Персонажи и слуги Омниссии</h2>
+            <p>Те, кто отказался от слабости плоти ради машины.</p>
+        </section>
+        <section class="cnt">
+            <input type="text" id="searchInput" placeholder="Поиск персонажа..." onkeyup="searchCharacters()">
+            <div class="button">
+                <button class="active" onclick="filterCharacters('all', this)">Все</button>
+                <button onclick="filterCharacters('magos', this)">Магосы</button>
+                <button onclick="filterCharacters('priest', this)">Жрецы</button>
+                <button onclick="filterCharacters('army', this)">Войска</button>
+            </div>
+        </section>
+        <section class="grid">
+            <div class="card" data-category="magos" data-name="Белизарий Коул" onclick="openModal('cawl')">
+                <img src="img/Коул.webp">
+                <h3>Белизарий Коул</h3>
+                <p>Архимагос и великий изобретатель.</p>
+            </div>
+
+            <div class="card" data-category="priest" data-name="Техножрец" onclick="openModal('techpriest')">
+                <img src="img/Жрец.webp">
+                <h3>Техножрец</h3>
+                <p>Служитель Омниссии.</p>
+            </div>
+
+            <div class="card" data-category="army" data-name="Скитарий" onclick="openModal('skitarii')">
+                <img src="img/Скитарии.webp">
+                <h3>Скитарий</h3>
+                <p>Киберсолдат Механикус.</p>
+            </div>
+        </section>
+        <div class="modal" id="modal">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <div class="modal-box">
+                <img id="modalImage">
+                <div class="modal-content">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalText"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>Сделанно Байышевым Марселем в 2026©</p>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #000;
+    border-bottom: 2px solid #b30000;
+}
+
+.head h1 {
+    color: #b30000;
+    text-shadow: 0 0 10px #b30000;
+}
+
+
+nav a {
+    color: #e0e0e0;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff3333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0a0a0a;
+    color: #e0e0e0;
+}
+
+header {
+    background: #000;
+    border-bottom: 2px solid #b30000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: #b30000;
+    text-shadow: 0 0 10px #b30000;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
+.cnt {
+    padding: 20px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    background: #111;
+    border: 1px solid #b30000;
+    color: white;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #b30000;
+    background: #111;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b30000;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    margin: 15px;
+    background: #111;
+    border: 1px solid #b30000;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px #b30000;
+}
+
+.card img {
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    background: #111;
+    border: 2px solid #b30000;
+    padding: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #b30000;
+}
