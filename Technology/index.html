@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Технологии — Adeptus Mechanicus</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Adeptus Mechanicus</h1>
+        <nav>
+            <a href="/index/index.html">Главная</a>
+            <a href="/Persona/index.html">Персонажи</a>
+            <a href="/Technology/index.html">Технологии</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Священные технологии Механикус</h2>
+        <p>Машина вечна. Знание священно. Плоть слаба.</p>
+    </section>
+
+    <section class="controls">
+        <input type="text" id="searchInput" placeholder="Поиск технологии..." />
+
+        <div class="filter-buttons">
+            <button class="active" data-filter="all">Все</button>
+            <button data-filter="weapon">Оружие</button>
+            <button data-filter="implant">Импланты</button>
+            <button data-filter="archive">Знания</button>
+            <button data-filter="machine">Машины</button>
+        </div>
+    </section>
+
+    <section class="tech-grid">
+        <div class="card" data-category="archive" data-name="STC" data-id="stc">
+            <img src="img/СШК.webp" alt="STC" />
+            <h3>STC</h3>
+            <p>Древние схемы и шаблоны технологий человечества.</p>
+        </div>
+
+        <div class="card" data-category="implant" data-name="Кибернетические импланты" data-id="implants">
+            <img src="img/Жрец.webp" alt="Кибернетические импланты" />
+            <h3>Кибернетические импланты</h3>
+            <p>Замена слабой плоти на более совершенные механизмы.</p>
+        </div>
+
+        <div class="card" data-category="machine" data-name="Обрядовые машины" data-id="machines">
+            <img src="img/машина.webp" alt="Обрядовые машины" />
+            <h3>Обрядовые машины</h3>
+            <p>Священные механизмы, поддерживаемые ритуалами и кодами.</p>
+        </div>
+
+        <div class="card" data-category="weapon" data-name="Плазменное оружие" data-id="plasma">
+            <img src="img/пушка.jpg" alt="Плазменное оружие" />
+            <h3>Плазменное оружие</h3>
+            <p>Одна из самых разрушительных и опасных технологий Империума.</p>
+        </div>
+
+        <div class="card" data-category="machine" data-name="Боевые сервиторы" data-id="servitors">
+            <img src="img/сервиторы.webp" alt="Боевые сервиторы" />
+            <h3>Боевые сервиторы</h3>
+            <p>Полумашины-полулюди, исполняющие тяжёлую и боевую работу.</p>
+        </div>
+
+        <div class="card" data-category="archive" data-name="Машинный дух" data-id="machineSpirit">
+            <img src="img/дух.jpg" alt="Машинный дух" />
+            <h3>Машинный дух</h3>
+            <p>Священная сущность, присутствующая в сложных механизмах.</p>
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <button class="close-btn" id="closeModalBtn">×</button>
+            <img id="modalImage" src="" alt="" />
+            <div class="modal-content">
+                <h2 id="modalTitle"></h2>
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Да благословит Омниссия священный код ⚙️</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
